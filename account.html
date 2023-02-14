@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Account</title>
+</head>
+
+<body>
+    <!-- HEADER & NAVBAR-->
+    <header>
+        <nav class="navbar navbar-expand-sm nutrition-nav static-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" id="logo" href="index.html"> <img class="img-fluid nutrition-logo"
+                        src="images/nhlogo.png" alt="Nutrition Hub"></a>
+            </div>
+        </nav>
+    </header>
+    <div class="container p-5">
+        <div class="row">
+            <div class="col-6">
+                <section class="form-container">
+                    <h4>Existing Customers</h4>
+                    <form>
+                        <div class="form-group">
+                            <label for="usr">Email:</label>
+                            <input type="email" name="email" class="form-control" id="email" placeholder="Enter Email">
+                            <p id="email-check" style="color: red;">Email must be valid</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Password:</label>
+                            <input type="password" name="password" class="form-control" id="input-password"
+                                placeholder="Enter Password">
+                            <p id="password-check" style="color: red;">Password can't be empty</p>
+                        </div>
+                        <div class="pt-2">
+                            <button type="submit" id="login" class="btn form-button btn-block"
+                                disabled=true>Login</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+            <div class="col-6">
+                <section class="form-container">
+                    <h4>New to Nutrition Hub?</h4>
+                    <h6>Create an account to get customer discounts, & get proactive notifications of sales.</h6>
+                    <div class="pt-2">
+                        <a href="signup.html"><button type="button" class="btn btn-block form-button">Create
+                                Account</button></a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-5">
+                    <a id="logo" href="index.html"> <img class="img-fluid" src="images/nhlogo.png" alt="Nutrition Hub">
+                    </a>
+                    <ul class="list-inline social_media">
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-youtube-play"
+                                    aria-hidden="true"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                    <p>*These statements have not been evaluated by the Food and Drug Administration. These products are
+                        not intended to diagnose.</p>
+                </div>
+                <div class="col-3">
+                    <ul class="links">
+                        <li><a href="#" class="active">Shop</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="account.html">Sign Up</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+
+                </div>
+                <div class="col-4 contact">
+
+                    <h4><i class="fa fa-envelope" aria-hidden="true"></i>
+                        <p>Email: </p>
+                    </h4>
+                    <a href="mailto:nutritionhub@gmail.com">nutritionhub@gmail.com</a>
+                    <h4><i class="fa fa-phone" aria-hidden="true"></i>
+                        <p>Contact for a Free Consultation:</p>
+                    </h4>
+                    <a href="mailto:nutritionhub@gmail.com">nutritionhub@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/account.js"></script>
+</body>
+
+</html>
